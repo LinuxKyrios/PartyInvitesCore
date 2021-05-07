@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/linuxkyrios/.dotnet/store/|arch|/|tfm|",
+      "/home/linuxkyrios/.nuget/packages"
+    ]
+  }
+}
