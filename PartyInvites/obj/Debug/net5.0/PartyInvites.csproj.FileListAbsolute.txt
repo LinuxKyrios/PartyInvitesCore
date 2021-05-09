@@ -39,3 +39,4 @@
 /home/linuxkyrios/IDE/Rider/Projekty/PartyInvites/PartyInvites/obj/Debug/net5.0/PartyInvites.genruntimeconfig.cache
 /home/linuxkyrios/IDE/Rider/Projekty/PartyInvites/PartyInvites/obj/Debug/net5.0/PartyInvites.csproj.CopyComplete
 /home/linuxkyrios/IDE/Rider/Projekty/PartyInvites/PartyInvites/obj/Debug/net5.0/Razor/Views/Home/MyView.cshtml.g.cs
+/home/linuxkyrios/IDE/Rider/Projekty/PartyInvites/PartyInvites/obj/Debug/net5.0/Razor/Views/Home/RsvpForm.cshtml.g.cs

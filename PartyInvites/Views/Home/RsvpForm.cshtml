@@ -1,0 +1,43 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
+</head>
+<body>
+    <form asp-action="RsvpForm" method="post">
+        <p>
+            <label asp-for="Name">First name and last name:</label>
+            <input asp-for="Name" />
+        </p>
+        <p>
+            <label asp-for="Nickname">Your Master of the Universe Nickname</label>
+            <input asp-for="Nickname" />
+        </p>
+        <p>
+            <label asp-for="Email">Email Address:</label>
+            <input asp-for="Email"/>
+        </p>
+        <p>
+            <label asp-for="Phone">Phone number</label>
+            <input asp-for="Phone" />
+        </p>
+        <p>
+            <label>Will you come to the Party for The Masters of The Universe?</label>
+            <select asp-for="WillAttend">
+                <option value="">Choose your destiny</option>
+                <option value="true">Yas, I am truly Master of The Universe and I will come</option>
+                <option value="false">Nope, I am random looser so I will not come to the Party</option>
+            </select>
+        </p>
+        <button type="submit">Send RSVP</button>
+    </form>
+</body>
+</html>
