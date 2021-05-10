@@ -20,10 +20,11 @@ namespace PartyInvites.Controllers
         }
 
         [HttpPost]
+        //Created post method for containing response and return view with thanks
         public ViewResult RsvpForm(GuestResponse guestResponse)
         {
-            //To make tomorrow - create sending guestResponse content to party planner
-            return View();
+            Repository.AddResponse(guestResponse);
+            return View("Thanks", guestResponse);
         }
     }
 }
