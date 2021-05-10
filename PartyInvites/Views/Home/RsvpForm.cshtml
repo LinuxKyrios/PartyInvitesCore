@@ -15,13 +15,15 @@
 </head>
 <body>
     <form asp-action="RsvpForm" method="post">
+        <!--Added summare of validation-->
+        <div asp-validation-summary="All"></div>
         <p>
             <label asp-for="Name">First name and last name:</label>
-            <input asp-for="Name" />
+            <input asp-for="Name"/>
         </p>
         <p>
             <label asp-for="Nickname">Your Master of the Universe Nickname</label>
-            <input asp-for="Nickname" />
+            <input asp-for="Nickname"/>
         </p>
         <p>
             <label asp-for="Email">Email Address:</label>
@@ -29,7 +31,7 @@
         </p>
         <p>
             <label asp-for="Phone">Phone number</label>
-            <input asp-for="Phone" />
+            <input asp-for="Phone"/>
         </p>
         <p>
             <label>Will you come to the Party for The Masters of The Universe?</label>
