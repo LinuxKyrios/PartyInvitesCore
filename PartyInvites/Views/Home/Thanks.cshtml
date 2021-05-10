@@ -1,0 +1,31 @@
+@model PartyInvites.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Party of the Masters of The Universe - Thanks</title>
+</head>
+<body>
+    <p>
+        <!--This view is used when somebody send RSVP form-->
+        <h1>Thank you, @Model.Name!</h1>
+        @if (Model.WillAttend == true)
+        {
+            @:We are glad, that you are truly the Master of the Universe. The Beherovka is in the fridge!
+        }
+        else
+        {
+            @:We are so sory for your loss. It must be hard to be looser :c
+        }
+    </p>
+    <p>Click <a asp-action="ListResponses">here</a>, to see a guest list.</p>
+</body>
+</html>
