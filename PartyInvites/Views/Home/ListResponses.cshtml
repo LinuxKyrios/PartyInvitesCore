@@ -11,12 +11,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
     <title>The Party of the Masters of The Universe - List of Responses</title>
 </head>
 <body>
+<div class="panel-body">
 <h2>There it is - the list of The Masters of The Universe who confirmed they presence at our great party!</h2>
-<table>
-    <thead>
+    <table class="table table-sm table-striped table-bordered">
+        <thead>
         <tr>
             <!--This is for labels -->
             <th>First name and last name</th>
@@ -24,9 +26,9 @@
             <th>Email address</th>
             <th>Phone number</th>
         </tr>
-    </thead>
-    <tbody>
-    <!--Foreach loop for obtaining data from GuestResponse Model -->
+        </thead>
+        <tbody>
+        <!--Foreach loop for obtaining data from GuestResponse Model -->
         @foreach (PartyInvites.Models.GuestResponse r in Model)
         {
             <tr>
@@ -36,7 +38,8 @@
                 <td>@r.Phone</td>
             </tr>
         }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
