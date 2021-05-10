@@ -11,9 +11,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
     <title>The Party of the Masters of The Universe - Thanks</title>
 </head>
-<body>
+<body class="text-center">
     <p>
         <!--This view is used when somebody send RSVP form-->
         <h1>Thank you, @Model.Name aka @Model.Nickname!</h1>
@@ -26,6 +27,6 @@
             @:We are so sory for your loss. It must be hard to be looser :c
         }
     </p>
-    <p>Click <a asp-action="ListResponses">here</a>, to see a guest list.</p>
+    <p>Click <a class="nav-link" asp-action="ListResponses">here</a> to see a guest list.</p>
 </body>
 </html>
