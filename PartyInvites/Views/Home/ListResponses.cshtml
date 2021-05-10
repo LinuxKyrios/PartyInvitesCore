@@ -1,0 +1,40 @@
+@model IEnumerable<PartyInvites.Models.GuestResponse>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Party of the Masters of The Universe - List of Responses</title>
+</head>
+<body>
+<h2>There it is - the list of The Masters of The Universe hwho confirmed they presence at our great party!</h2>
+<table>
+    <thead>
+        <tr>
+            <th>First name and last name</th>
+            <th>Nickname</th>
+            <th>Email address</th>
+            <th>Phone number</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (PartyInvites.Models.GuestResponse r in Model)
+    {
+        <tr>
+            <td>@r.Name</td>
+            <td>@r.Nickname</td>
+            <td>@r.Email</td>
+            <td>@r.Phone</td>
+        </tr>
+    }
+    </tbody>
+</table>
+</body>
+</html>
