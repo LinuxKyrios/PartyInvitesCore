@@ -24,8 +24,17 @@ namespace PartyInvites.Controllers
         //Created post method for containing response and return view with thanks
         public ViewResult RsvpForm(GuestResponse guestResponse)
         {
-            Repository.AddResponse(guestResponse);
-            return View("Thanks", guestResponse);
+            //Data validation
+            if (ModelState.IsValid)
+            {
+                Repository.AddResponse(guestResponse);
+                return View("Thanks", guestResponse);
+            }
+            else
+            {
+                //Error in correctness control
+                return View();
+            }
         }
 
         //This method is created for returning view with affirmative responses from repository.
