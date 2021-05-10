@@ -18,6 +18,7 @@
 <table>
     <thead>
         <tr>
+            <!--This is for labels -->
             <th>First name and last name</th>
             <th>Nickname</th>
             <th>Email address</th>
@@ -25,15 +26,16 @@
         </tr>
     </thead>
     <tbody>
-    @foreach (PartyInvites.Models.GuestResponse r in Model)
-    {
-        <tr>
-            <td>@r.Name</td>
-            <td>@r.Nickname</td>
-            <td>@r.Email</td>
-            <td>@r.Phone</td>
-        </tr>
-    }
+    <!--Foreach loop for obtaining data from GuestResponse Model -->
+        @foreach (PartyInvites.Models.GuestResponse r in Model)
+        {
+            <tr>
+                <td>@r.Name</td>
+                <td>@r.Nickname</td>
+                <td>@r.Email</td>
+                <td>@r.Phone</td>
+            </tr>
+        }
     </tbody>
 </table>
 </body>
